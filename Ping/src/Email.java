@@ -22,4 +22,28 @@ public class Email {
 		this.subject = subject;
 		this.text = text;
 	}
+	
+	public List<User> getTo() {
+		return new ArrayList<User>(to);
+	}
+	
+	public List<User> getBcc() {
+		return new ArrayList<User>(bcc);
+	}
+	
+	public List<User> getCc() {
+		return new ArrayList<User>(cc);
+	}
+	
+	public User getFrom() {
+		return from;
+	}
+	
+	public String getSubject() {
+		return subject;
+	}
+	
+	public String getText() {
+		return text;
+	}
 }
